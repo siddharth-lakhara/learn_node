@@ -1,5 +1,5 @@
 const http = require('http');
-const fs = require('fs');
+// const fs = require('fs');
 
 let server = http.createServer((req, res)=>{
 	let bufferString = '';
@@ -8,12 +8,13 @@ let server = http.createServer((req, res)=>{
 	});
 	req.on('end', ()=> {
 		bufferString = bufferString.toUpperCase();
-		//console.log(bufferString);
-		let readable = require('stream').Readable;
-		let stream = new readable();
-		stream.push(bufferString);
-		stream.push(null);
-		stream.pipe(res);
+		// console.log(bufferString);
+		// let readable = require('stream').Readable;
+		// let stream = new readable();
+		// stream.push(bufferString);
+		// stream.push(null);
+		// stream.pipe(res);
+		res.end(bufferString);
 	});
 
 });
