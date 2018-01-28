@@ -9,7 +9,7 @@ test('Testing testFile.txt: ', ()=>{
 });
 
 test('Testing with file that doesnt exist: ', ()=>{
-	expect(synch('./testFile3.txt')).toThrow('no such file or directory');
+	expect(()=>synch('./testFile3.txt')).toThrowError('ENOENT: no such file or directory, open \'./testFile3.txt\'');
 });
 
 test('Testing with null: ', ()=>{

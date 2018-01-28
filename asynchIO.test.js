@@ -28,14 +28,14 @@ test('Testing with file that doesnt exist: ', ()=>{
 
 test('Testing with null: ', ()=>{
 	let callback = (retData)=>{
-		expect(retData).toBe('ENOENT');
+		expect(retData).toBe('Error: provide file name as string');
 	};
 	asynch(null, callback);
 });
 
 test('Testing with undefined: ', ()=>{
 	let callback = (retData)=>{
-		expect(retData).toBe('ENOENT');
+		expect(retData).toBe('Error: provide file name as string');
 	};
 	asynch(undefined, callback);
 });

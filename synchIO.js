@@ -4,6 +4,7 @@ const fs = require('fs');
 function calcLines(fileName){
 	if (typeof fileName != 'string')
 		return 'Error: File name as string expected';
+
 	let buf = fs.readFileSync(fileName);
 	let data = buf.toString();
 	let dataArray = data.split('\n');
