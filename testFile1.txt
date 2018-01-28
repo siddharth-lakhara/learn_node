@@ -1,0 +1,6 @@
+hello there!
+this is line 1
+this is line 2
+and this is
+last line
+Total lines: 6

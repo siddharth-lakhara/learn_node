@@ -1,0 +1,8 @@
+hello there!
+this is line 1
+in this example
+the number of
+lines are
+more than
+last example
+total lines: 8
